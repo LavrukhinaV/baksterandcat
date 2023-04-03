@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'TT Drugs';
+    src: url('TTDrugs-Regular.eot');
+    src: local('TT Drugs Regular'), local('TTDrugs-Regular'),
+        url('../fonts/TTDrugs-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTDrugs-Regular.woff2') format('woff2'),
+        url('../fonts/TTDrugs-Regular.woff') format('woff'),
+        url('../fonts/TTDrugs-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Drugs';
+    src: url('TTDrugs-Bold.eot');
+    src: local('TT Drugs Bold'), local('TTDrugs-Bold'),
+        url('../fonts/TTDrugs-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTDrugs-Bold.woff2') format('woff2'),
+        url('../fonts/TTDrugs-Bold.woff') format('woff'),
+        url('../fonts/TTDrugs-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
