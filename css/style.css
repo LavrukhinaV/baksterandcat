@@ -354,6 +354,7 @@ button:focus {
 }
 
 .product-item .text-wrap .product-count.show {
+    margin: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1725,6 +1726,8 @@ footer .wrapper .footer-bottom a:hover {
     background: #FFCDA7;
     height: 100%;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .select-wrap .select2-container--default .select2-selection--single:focus {
@@ -1732,12 +1735,12 @@ footer .wrapper .footer-bottom a:hover {
 }
 
 .select-wrap .select2-container .select2-selection--single .select2-selection__rendered {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     color: #000;
     padding: 10px 15px;
-    line-height: 18px;
-    height: 39px;
+    line-height: 100%;
+    font-family: TT Drugs;
 }
 
 @media (max-width: 767px) {
@@ -1803,7 +1806,7 @@ footer .wrapper .footer-bottom a:hover {
 
 .select2-container--default .select2-results__option[aria-selected=true] {
     background: #FFCDA7;
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
 
 @media (max-width: 767px) {
@@ -1844,7 +1847,7 @@ footer .wrapper .footer-bottom a:hover {
 
 .select2-results__option {
     padding: 6px 0px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: blue;
     height: 40px !important;
@@ -1931,7 +1934,7 @@ footer .wrapper .footer-bottom a:hover {
     font-weight: 400;
     padding: 0 15px;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .radio-wrap input[type=radio] {
@@ -2298,6 +2301,12 @@ footer .wrapper .footer-bottom a:hover {
 
 .tab-content .tab-content-item .choice-delivery .choice-delivery-wrap p b {
     margin-bottom: 0;
+}
+.tab-content .tab-content-item .choice-delivery .choice-delivery-wrap .hide-wrap .buttons .select-wrap #selectSort {
+    padding: 12.5px 15px;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: TT Drugs;
 }
 
 .tab-content .tab-content-item .choice-delivery .choice-delivery-wrap > .buttons {
@@ -3240,7 +3249,7 @@ footer .wrapper .footer-bottom a:hover {
 
 @media (max-width: 767px) {
     .banner-slider .slick-dots {
-        bottom: 30px;
+        display: none !important;
     }
 }
 
@@ -3293,11 +3302,18 @@ footer .wrapper .footer-bottom a:hover {
     .banner-slider .banner-slider-item .banner-slider-info h2 {
         font-size: 32px;
         line-height: 40px;
-        margin-bottom: 40px;
     }
 
     .banner-slider .banner-slider-item .banner-slider-info a {
         bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-slider .banner-slider-item .banner-slider-info h2 {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 340px;
     }
 }
 
@@ -3619,7 +3635,7 @@ footer .wrapper .footer-bottom a:hover {
     border: 1px solid #C4C4C4;
     border-radius: 15px;
     padding: 8px;
-    font-size: 14px;
+    font-size: 14px !important;
     color: #000;
     margin: 0 4px;
     min-width: 95px;
@@ -3635,6 +3651,7 @@ footer .wrapper .footer-bottom a:hover {
 
 .categories-drop-menu .price-wrap .slider-texts label input {
     margin-left: 6px;
+    width: 100%;
 }
 
 .categories-drop-menu .categories-menu-wrap,
@@ -3700,6 +3717,7 @@ footer .wrapper .footer-bottom a:hover {
 }
 
 .product-catalog-items .wrapper .categories-drop-menu {
+    margin-top: -85px;
     width: 255px;
     margin-right: 30px;
     position: static;

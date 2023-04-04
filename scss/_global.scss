@@ -2,7 +2,7 @@
 body,
 html {
     overflow-x: hidden;
-    font-family: 'TT Drugs', sans-serif;, sans-serif;
+    font-family: 'TT Drugs', sans-serif, sans-serif;
 
     &.overflow {
         overflow: hidden;
@@ -1516,7 +1516,7 @@ footer {
 }
 
 .select2-results__option {
-    font-size: 16px;
+    font-size: 14px;
     color: blue;
     height: 40px !important;
     background: #FFEFE3;
@@ -1577,7 +1577,7 @@ footer {
     font-weight: 400;
     padding: 0 15px;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .radio-wrap {

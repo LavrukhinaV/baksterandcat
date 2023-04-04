@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/map.css">
+  
 </head>
 
 <body>
@@ -393,8 +395,9 @@
             <div class="choice-delivery-wrap">
               <p><b>Выберите вариант доставки</b> (обязательно)</p>
               <div class="buttons">
-                <a href="#" class="main-btn courier-delivery">Доставка курьером Ozon Rocket</a>
-                <a href="#" class="main-btn">Cамовывоз</a>
+                <a href="#" class="main-btn courier-delivery">Доставка курьером</a>
+                <!-- <a href="#" class="main-btn">Cамовывоз</a> -->
+                <a href="#" class="main-btn point-issue">Пункт выдачи</a>
               </div>
               <div class="hide-wrap">
                 <b>Адрес доставки</b>
@@ -405,7 +408,7 @@
                 <b>Время доставки</b>
                 <div class="buttons">
                   <div class="select-wrap">
-                    <select>
+                    <select id="selectDate">
                       <option value="1">Выберите дату</option>
                       <option value="2">Среда, 29.04.2022</option>
                       <option value="3">Среда, 30.04.2022</option>
@@ -413,7 +416,7 @@
                     </select>
                   </div>
                   <div class="select-wrap">
-                    <select>
+                    <select id="selectTime">
                       <option value="1">Выберите интервал</option>
                       <option value="2">12.00-16.00</option>
                       <option value="3">13.00-17.00</option>
@@ -424,6 +427,52 @@
                 <b>Комментарий к заказу</b>
                 <textarea placeholder="Укажите здесь примечания к доставке Курьер учтёт ваш комментарий"></textarea>
               </div>
+              <!-- новый код -->
+              <div class="hide-wrap_point">
+                <div class="delivery-options__container">
+                  <div class="select-wrap delivery-options">
+                    <select name="delivery" id="selectDelivery" class="delivery-options__choose">
+                      <option value="">Выберите пункт выдачи:</option>
+                      <option value="all">Все варианты</option>
+                      <option value="pochta">Почта России</option>
+                      <option value="yandex">Яндекс.Доставка</option>
+                      <option value="ozon">Ozon</option>
+                    </select>
+                  </div>
+                  <a class="delivery-options__btn" href="#!">Показать ближайший</a>
+                </div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac38e57128a15eb4467d913ba052d25660a584855a4a42fbd20f550d275b55890&amp;source=constructor" width=100% height="400" frameborder="0"></iframe>
+              </div>  
+              <div class="point-info__block">
+                <h2 class="point-info__title">Пункт выдачи Ozon</h2>
+                  <div class="point-info__item">
+                    <h3 class="point-info__subtitle">Адрес</h3>
+                    <p class="point-info__text">Россия, 117556, г. Санкт-Петербург, Чонгарский бульвар, д. 7, кв 21</p>
+                  </div>
+                  <div class="point-info__item">
+                    <h3 class="point-info__subtitle">Ограничения</h3>
+                    <p class="point-info__text">нет оплаты при получении</p>
+                  </div>
+                  <div class="point-info__item">
+                    <h3 class="point-info__subtitle">Режим работы</h3>
+                    <p class="point-info__text">пн-вс 9:00-23:00</p>
+                  </div>
+                  <div class="point-info__item">
+                    <h3 class="point-info__subtitle">Контактный телефон</h3>
+                    <p class="point-info__text">8 800 770 70 21</p>
+                  </div>
+                  <div class="point-info__buttons">
+                    <a href="#!" class="point-info__button">Выбрать</a>
+                    <div class="checkbox-wrap">
+                      <label>
+                        <input type="checkbox">
+                        <span class="icon-point"></span>
+                        <span class="text">Сохранить адрес пункта выдачи</span>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+            <!-- новый код -->
             </div>
           </div>
           <div class="total-cost">
@@ -461,7 +510,7 @@
                 <img src="./img/icon-card.svg" alt="card" class="card-icon">
                 <p>Картой</p>
               </a></div>
-              <div class="card border-block payment-yandex"><a href="#">
+              <div class="card border-block "><a href="#">
                 <img src="./img/icon-yandex-pay.svg" alt="yandex" class="card-icon">
                 <p>Яндекс Pay</p>
               </a></div>
@@ -673,6 +722,7 @@
 <script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/script.js"></script>
+
 
 
 </body>

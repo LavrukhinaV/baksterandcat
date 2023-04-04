@@ -1,0 +1,115 @@
+
+.hide-wrap_point {
+    display: none;
+}
+.hide-wrap_point.shown {
+    display: block;
+}
+.delivery-options__choose {
+    border: 1px solid #B8B8B8;
+    border-radius: 20px;
+    padding: 9px 40px 8px 16px;
+    background-image: url('/img/choose-point.svg');
+    background-repeat: no-repeat;
+    background-position: right 17px center; 
+    appearance: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+}
+.delivery-options__choose option:nth-of-type(1),
+.delivery-options__choose option:nth-of-type(2) {
+  font-family: 'TT Drugs', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+select:focus>option:checked {
+    background-color: transparent;
+    font-family: 'TT Drugs', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    outline: none;
+    background:  #FFFFFF;
+}
+.delivery-options__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 9px 16px;
+    border: 1px solid #B8B8B8;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+.delivery-options__container {
+    display: flex;
+    padding: 16px 0;
+    gap: 16px;
+}
+iframe {
+    border-radius: 20px;
+}
+.point-info__block {
+    border: 1px solid #B8B8B8;
+    border-radius: 15px;
+    margin-top: 16.5px;
+}
+.point-info__title {
+    background: #FFEFE3;
+    border-bottom: 1px solid #B8B8B8;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 16px 0 16px 16px;
+}
+.point-info__item {
+    padding: 16px 0 0 16px;;
+}
+.point-info__item:last-child {
+    padding-bottom: 16px;
+}
+.point-info__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
+.point-info__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.point-info__buttons {
+    display: flex;
+    padding: 0 0 16px 16px;
+    gap: 10px;
+    align-items: center;
+}
+.point-info__button {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 9px 15px;
+    background: #FFCDA7;
+    border-radius: 10px;
+    color: #000000;
+}
+.checkbox-wrap label .icon-point {
+    min-width: 10px;
+    height: 10px;
+    border: 1px solid #F29109;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+.checkbox-wrap label input:checked ~ .icon-point {
+    background: url(../img/checkbox-icon-checked.png) no-repeat center center/cover;
+}
+  /* из global.scss */
+
+  .tab-content .tab-content-item .border-block {
+    padding-right: 16px;
+}

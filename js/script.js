@@ -100,8 +100,8 @@ $(document).ready(function () {
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    // autoplay: true,
-    // autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
   
   //    $(".product-count .btn-minus").addClass("btn-disabled");
@@ -264,7 +264,31 @@ $(document).ready(function () {
   const selectSort = $('#selectSort');
   selectSort.select2({
     minimumResultsForSearch: -1,
-    
+  });
+
+  const selectDelivery = $('#selectDelivery');
+  selectDelivery.select2({
+    minimumResultsForSearch: -1,
+  });
+
+  const selectDate = $('#selectDate');
+  selectDate.select2({
+    minimumResultsForSearch: -1,
+  });
+
+  const selectTime = $('#selectTime');
+  selectTime.select2({
+    minimumResultsForSearch: -1,
+  });
+
+  const selectFavorites = $('#selectFavorites');
+  selectFavorites.select2({
+    minimumResultsForSearch: -1,
+  });
+
+  const selectAvailability = $('#selectAvailability');
+  selectAvailability.select2({
+    minimumResultsForSearch: -1,
   });
   
   //обработка выбора сортировки товаров, перенаправление по ссылке из data-href
@@ -309,12 +333,30 @@ $(document).ready(function () {
   $(".phone-number-input").inputmask({
     "mask": "+7 (999)-999-99-99",
   });
-  
+
+  // изменения в коде до 329 строки
+  let activeButton = null;
   $(".courier-delivery").on("click", function (e) {
     e.preventDefault();
-    $(this).addClass("active");
-    $(".hide-wrap").addClass("shown");
+    if (activeButton === "point-issue") {
+      $(".point-issue").removeClass("active");
+      $(".hide-wrap_point").removeClass("shown");
+    }
+    $(this).toggleClass("active");
+    $(".hide-wrap").toggleClass("shown");
+    activeButton = "courier-delivery";
     
+  })
+  //при клике на ПВ
+  $(".point-issue").on("click", function (e) {
+    e.preventDefault();
+    if (activeButton === "courier-delivery") {
+      $(".courier-delivery").removeClass("active");
+      $(".hide-wrap").removeClass("shown");
+    }
+    $(this).toggleClass("active");
+    $(".hide-wrap_point").toggleClass("shown");
+    activeButton = "point-issue";
   })
   
   $('.popup').magnificPopup({
