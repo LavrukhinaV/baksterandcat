@@ -99,8 +99,8 @@ iframe {
     color: #000000;
 }
 .checkbox-wrap label .icon-point {
-    min-width: 10px;
-    height: 10px;
+    min-width: 20px;
+    height: 20px;
     border: 1px solid #F29109;
     border-radius: 3px;
     margin-right: 8px;

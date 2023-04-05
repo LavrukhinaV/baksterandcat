@@ -1747,6 +1747,21 @@ footer .wrapper .footer-bottom a:hover {
     font-family: TT Drugs;
 }
 
+.select-wrap_choice-delivery .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.delivery-options {
+    height: auto;
+}
+
+.delivery-options .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 9px 15px;
+}
+
 @media (max-width: 767px) {
     .select-wrap .select2-container .select2-selection--single .select2-selection__rendered {
         font-size: 14px;
@@ -2292,10 +2307,9 @@ footer .wrapper .footer-bottom a:hover {
 .tab-content .tab-content-item .choice-delivery .choice-delivery-wrap b {
     font-weight: bold;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 18px;
     margin-bottom: 4px;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
 }
 
 .tab-content .tab-content-item .choice-delivery .choice-delivery-wrap p {
@@ -2491,6 +2505,16 @@ footer .wrapper .footer-bottom a:hover {
     order: 1;
     flex-grow: 0;
     text-align: center;
+}
+
+.tab-content .tab-content-item .payment-method .card .card-icon_yandex {
+    border-radius: 15px;
+    object-fit: contain;
+    max-width: 50px;
+    width: 100%;
+    overflow: initial;
+    border: 1px solid #000000;
+    padding: 4px;
 }
 
 /* .tab-content .tab-content-item .border-block {
@@ -3679,6 +3703,7 @@ footer .wrapper .footer-bottom a:hover {
     border-radius: 15px;
     padding: 8px;
     font-size: 14px !important;
+    line-height: 18px;
     color: #000;
     margin: 0 4px;
     min-width: 95px;
@@ -3695,6 +3720,8 @@ footer .wrapper .footer-bottom a:hover {
 .categories-drop-menu .price-wrap .slider-texts label input {
     margin-left: 6px;
     width: 100%;
+    font-size: 14px !important;
+    line-height: 18px;
 }
 
 .categories-drop-menu .categories-menu-wrap,

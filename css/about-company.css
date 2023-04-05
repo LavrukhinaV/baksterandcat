@@ -1,6 +1,9 @@
 main {
     height: 100%;
 }
+.main__logo {
+    width: 100%;
+}
 .main__title {
     font-size: 40px;
     line-height: 100%;

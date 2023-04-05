@@ -38,7 +38,7 @@ select:focus>option:checked {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    padding: 9px 16px;
+    padding: 8px 16px;
     border: 1px solid #B8B8B8;
     border-radius: 20px;
     cursor: pointer;
@@ -102,8 +102,8 @@ iframe {
     color: #000000;
 }
 .checkbox-wrap label .icon-point {
-    min-width: 10px;
-    height: 10px;
+    min-width: 20px;
+    height: 20px;
     border: 1px solid #F29109;
     border-radius: 3px;
     margin-right: 8px;
