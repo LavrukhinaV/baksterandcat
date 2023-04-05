@@ -4394,6 +4394,7 @@ footer .wrapper .footer-bottom a:hover {
 .basket-wrap {
     padding-top: 16px;
     margin-bottom: 90px;
+    flex: 1 1;
 }
 
 @media (max-width: 992px) {
@@ -4728,6 +4729,7 @@ footer .wrapper .footer-bottom a:hover {
 
 .shopping-cart-wrap {
     padding: 16px 0 64px;
+    flex: 1 1;
 }
 
 .shopping-cart-wrap .wrapper .main-title {
@@ -5102,6 +5104,7 @@ main footer {
 
 .profile-wrap .wrapper .profile-block .personal-data-wrap .contact-form .inputs-wrap {
     margin-right: 0;
+    align-self: stretch;
 }
 
 .profile-wrap .wrapper .profile-block .personal-data-wrap .contact-form .inputs-wrap .checkbox-wrap {
