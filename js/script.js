@@ -394,3 +394,12 @@ $(document).ready(function () {
   })
   
 });
+
+var textarea = document.querySelector('.contact-form__textarea');
+console.log(textarea)
+
+textarea.addEventListener('keyup', function(){
+  if(this.scrollTop > 0){
+    this.style.height = this.scrollHeight + "px";
+  }
+});
