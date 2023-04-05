@@ -5382,4 +5382,14 @@ main footer {
     color: #fff;
 }
 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-container p {
+    max-width: none;
+}
+
 /*# sourceMappingURL=style.css.map */
