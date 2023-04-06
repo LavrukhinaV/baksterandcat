@@ -374,6 +374,9 @@ $(document).ready(function () {
     }
     $(this).toggleClass("active");
     $(".hide-wrap_point").toggleClass("shown");
+
+    
+    
     activeButton = "point-issue";
   })
   
@@ -414,10 +417,26 @@ $(document).ready(function () {
 });
 
 var textarea = document.querySelector('.contact-form__textarea');
-console.log(textarea)
 
 textarea?.addEventListener('keyup', function(){
   if(this.scrollTop > 0){
     this.style.height = this.scrollHeight + "px";
   }
 });
+
+// Выбор оплаты бонусами 
+const buttonSelectPaymentByBonuses = document.querySelector('.payment-method-bonuses')
+const paymentNote = document.querySelector('.payment-notes');
+const paymentWithBonusesContainer = document.querySelector('.payment-with-bonuse')
+
+buttonSelectPaymentByBonuses.addEventListener('click', function() {
+  paymentNote.classList.add('payment-note_invisible');
+  paymentWithBonusesContainer.classList.add('payment-with-bonuse_visible')
+})
+
+document.querySelectorAll('.payment-method').forEach((item) => {
+  item.addEventListener('click', function() {
+    paymentNote.classList.remove('payment-note_invisible');
+    paymentWithBonusesContainer.classList.remove('payment-with-bonuse_visible')
+  })
+})

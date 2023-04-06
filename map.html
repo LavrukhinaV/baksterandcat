@@ -403,7 +403,6 @@
                 <b>Адрес доставки</b>
                 <div class="read">
                   <input type="text" placeholder="Россия, 117556, г. Москва, б-р Чонгарский бульвар, д. 7">
-                  <button type="button">Изменить</button>
                 </div>
                 <b>Время доставки</b>
                 <div class="buttons">
@@ -501,48 +500,52 @@
         <div class="payment-wrap">
           <div class="border-block">
             <p>Выберите способ оплаты</p>
-            <div class="payment-method ">
-              <div class="card border-block"><a href="#">
+            <div class="payment-methods ">
+              <div class="card border-block payment-method"><a href="#">
                 <img src="./img/icon-cash.svg" alt="cash" class="card-icon">
                 <p>Наличными</p>
               </a></div>
-              <div class="card border-block "><a href="#">
+              <div class="card border-block payment-method"><a href="#">
                 <img src="./img/icon-card.svg" alt="card" class="card-icon">
                 <p>Картой</p>
               </a></div>
-              <div class="card border-block "><a href="#">
+              <div class="card border-block payment-method"><a href="#">
                 <img src="./img/Yandex_Pay_logo.svg" alt="yandex" class="card-icon card-icon_yandex" style="border-radius: 15px">
                 <p>Яндекс Pay</p>
               </a></div>
-              <div class="card border-block "><a href="#">
+              <div class="card border-block payment-method"><a href="#">
                 <img src="./img/icon-shares.svg" alt="shares" class="card-icon">
                 <p>Долями</p>
               </a></div>
-              <div class="card border-block "><a href="#">
+              <div class="card border-block payment-method"><a href="#">
                 <img src="./img/icon-SBP.svg" alt="spb" class="card-icon">
                 <p>Система Быстрых Платежей</p>
               </a></div>
-              <div class="card border-block "><a href="#">
+              <div class="card border-block payment-method-bonuses"><a href="#">
                 <img src="./img/icon-bonuses.svg" alt="bonuses" class="card-icon">
                 <p>Бонусами</p>
               </a></div>
             </div>
           </div>
           <div class="border-block payment-takeoff">
-            <div class="card border-block"><a href="#">
-              <b>Бонусная карта</b>
-              <p>бонусы <br><strong>666</strong></p>
-            </a>
+            <div class="payment-with-bonuse">
+              <div class="card border-block"><a href="#">
+                <b>Бонусная карта</b>
+                <p>бонусы <br><strong>666</strong></p>
+                </a>
+              </div>
+              <div class="takeoff">
+                <form action="" method="get">
+                  <input type="hidden" name="tags" value="">
+                  <label>
+                    <input type="text" name="q" value="" size="40" placeholder="Списать бонусы">
+                  </label>
+                  <input type="submit" value="Применить">
+                </form>
+              </div>
             </div>
-            <div class="takeoff">
-              <form action="" method="get">
-                <input type="hidden" name="tags" value="">
-                <label>
-                  <input type="text" name="q" value="" size="40">
-                </label>
-                <input type="submit" value="Применить">
-              </form>
-            </div>
+
+            <p class="payment-notes">Оплата наличными возможна при доставке по Москве и самовывозе</p>
           </div>
         </div>
         <div class="total-cost">
