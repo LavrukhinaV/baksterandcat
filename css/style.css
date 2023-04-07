@@ -766,6 +766,11 @@ header .wrapper .header-search .search-arrow {
     display: flex;
 }
 
+header .wrapper .header-search .search-close {
+    margin-left: 50px;
+    display: flex;
+}
+
 header .wrapper .header-search .search {
     position: absolute;
     top: 50%;
@@ -777,6 +782,7 @@ header .wrapper .header-search .search {
 }
 
 header .wrapper .header-search .search img {
+    padding: 8px;
     width: 35px;
 }
 
@@ -3270,6 +3276,7 @@ footer .wrapper .footer-bottom a:hover {
 
 .our-partners .partners-slider {
     margin-left: calc((100% - 1110px) / 2);
+    margin-right: calc((100% - 1110px) / 2);
 }
 
 @media (max-width: 1140px) {
@@ -3967,10 +3974,11 @@ footer .wrapper .footer-bottom a:hover {
     gap: 1em;
 }
 .categories-menu-button {
-
-    font-weight: 700;
+    padding: 9px;
     font-size: 18px;
     line-height: 24px;
+    background: #FFCDA7;
+    border-radius: 10px;
 }
 
 .feed-slider-wrap,

@@ -53,14 +53,10 @@ iframe {
     border-radius: 20px;
 }
 .point-info__block {
-    /* display: none; */
     border: 1px solid #B8B8B8;
     border-radius: 15px;
     margin-top: 16.5px;
 }
-/* .point-info__block.shown {
-    display: block;
-} */
 .point-info__title {
     background: #FFEFE3;
     border-bottom: 1px solid #B8B8B8;

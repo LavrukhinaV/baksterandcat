@@ -374,9 +374,6 @@ $(document).ready(function () {
     }
     $(this).toggleClass("active");
     $(".hide-wrap_point").toggleClass("shown");
-
-    
-    
     activeButton = "point-issue";
   })
   
@@ -406,6 +403,12 @@ $(document).ready(function () {
     el.preventDefault();
     $(".wrapper-header").hide(300);
     $(".wrapper-search").show(300)
+  })
+
+  $(".search-close").on("click", function (el) {
+    el.preventDefault();
+    $(".wrapper-header").show(300);
+    $(".wrapper-search").hide(300)
   })
   
   $(".search-arrow").on("click", function (el) {
